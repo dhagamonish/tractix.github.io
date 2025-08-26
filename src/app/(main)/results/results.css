@@ -1,0 +1,84 @@
+
+.card-container {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  background: linear-gradient(
+    to top right,
+    #975af4,
+    #2f7cf8 40%,
+    #78aafa 65%,
+    #934cff 100%
+  );
+  padding: 4px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card-container .title-card {
+  display: flex;
+  align-items: center;
+  padding: 16px 18px;
+  justify-content: space-between;
+  color: #fff;
+}
+.card-container .title-card p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 6px #2975ee;
+}
+
+.card-container .card-content {
+  width: 100%;
+  height: 100%;
+  background-color: #161a20;
+  border-radius: 28px;
+  color: #bab9b9;
+  font-size: 14px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex-grow: 1;
+}
+.card-container .card-content .title {
+  font-weight: 600;
+  color: #fff;
+}
+.card-container .card-content .plain :nth-child(1) {
+  font-size: 36px;
+  color: #fff;
+}
+.card-container .card-content .card-btn {
+  background: linear-gradient(
+    4deg,
+    #975af4,
+    #2f7cf8 40%,
+    #78aafa 65%,
+    #934cff 100%
+  );
+  padding: 12px;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.6);
+}
+.card-container .card-content .card-btn:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #fff;
+  transform: scale(1.03);
+}
+.card-container .card-content .card-btn:active {
+  transform: scale(1);
+}
+
+.title-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+}

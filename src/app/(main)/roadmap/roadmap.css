@@ -1,0 +1,25 @@
+
+.hero-block-card {
+    border: 1px solid hsl(var(--primary) / 0.2);
+    background: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(var(--secondary) / 0.3) 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.roadmap-phase-card {
+    border: 1px solid hsl(var(--border) / 0.5);
+    z-index: 10;
+}
+
+@media (min-width: 768px) {
+    .roadmap-phase-card::before {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 2rem; /* Corresponds to gap-8 */
+        background-color: hsl(var(--border));
+    }
+}
